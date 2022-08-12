@@ -34,7 +34,7 @@ const Login = () => {
         <div>
             <h3 style={{ textAlign: 'left'}}>Welcome! Enter your email and password to continue</h3>
             <br/>
-            <div className='card'>
+            <div className='card1'>
                 <h4>Test data</h4>
                 <br/>
                 <p><b>EMAIL</b></p>

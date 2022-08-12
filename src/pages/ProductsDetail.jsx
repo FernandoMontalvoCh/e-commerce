@@ -82,7 +82,7 @@ const ProductsDetail = () => {
                             onClick={() => navigate(`/products/${products.id}`)}
                             />
                             <Card.Body>
-                                <Card.Title>{products.title}</Card.Title>
+                                <Card.Title style={{ color: 'black' }}>{products.title}</Card.Title>
 
                             </Card.Body>
                         </Card>

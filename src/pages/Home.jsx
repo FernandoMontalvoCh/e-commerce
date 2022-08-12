@@ -52,6 +52,7 @@ const Home = () => {
                 <Col>
                     <InputGroup className="mb-3">
                         <Form.Control
+                            style={{ height: '52px'}}
                             placeholder="Search your product"
                             aria-label="Search your product"
                             aria-describedby="basic-addon2"
@@ -77,8 +78,8 @@ const Home = () => {
                                         onClick={() => navigate(`/products/${product.id}`)}
                                     />
                                     <Card.Body>
-                                        <Card.Title>{product.title}</Card.Title>
-                                        <Card.Text><b>Price: </b>{product.price}</Card.Text>
+                                        <Card.Title style={{ color: 'black' }}>{product.title}</Card.Title>
+                                        <Card.Text style={{ color: 'black' }}><b>Price: </b>{product.price}</Card.Text>
                                         <Button onClick={() => addProduct(product.id)}>
                                             Add to Cart
                                         </Button>
