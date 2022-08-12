@@ -1,18 +1,4 @@
-.products-container{
-    width: 400px;
-    height: 500px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
-    margin-top: 2rem;
-    margin-left: 3rem;
-}
-
-.products-img{
-    height: 400px;
-    width: 300px;
-}
-
-.products-flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.img {
+    height: 200px;
+    width: 100px;
 }

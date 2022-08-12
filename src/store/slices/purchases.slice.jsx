@@ -3,25 +3,25 @@ import axios from 'axios';
 import getConfig from '../../utils/getConfig';
 import { setIsLoading } from './isLoading.slice';
 
-export const favoritesSlice = createSlice({
-    name: 'favorites',
+export const purchasesSlice = createSlice({
+    name: 'purchases',
     initialState: [],
     reducers: {
-        setFavorites: (state, action) => {
-            const favorites = action.payload;
-            return favorites;
+        setPurchases: (state, action) => {
+            const purchases = action.payload;
+            return purchases;
         }
     }
     
 })
 
-export const getFavoritesThunk = () => (dispatch) => {
+export const getPurchasesThunk = () => (dispatch) => {
     dispatch(setIsLoading(true));
     return axios.get("https://ecommerce-api-react.herokuapp.com/api/v1/purchases", getConfig())
-        .then((res) => dispatch(setFavorites(res.data.data.purchases)))
+        .then((res) => dispatch(setPurchases(res.data.data.purchases)))
         .finally(() => dispatch(setIsLoading(false)));
 }
 
-export const { setFavorites } = favoritesSlice.actions;
+export const { setPurchases } = purchasesSlice.actions;
 
-export default favoritesSlice.reducer;
+export default purchasesSlice.reducer;

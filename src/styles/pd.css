@@ -1,0 +1,21 @@
+.maybe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img {
+    height: 300px;
+    width: 150px;
+    margin-left: 4rem;
+}
+
+.img-1 {
+    height: 400px;
+    width: 390px;
+}
+
+.h1 {
+    text-align: left;
+}
