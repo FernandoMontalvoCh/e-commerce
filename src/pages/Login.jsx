@@ -3,6 +3,7 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import '../styles/login.css'
 
 
 const Login = () => {
@@ -31,7 +32,17 @@ const Login = () => {
 
     return (
         <div>
-            <h1>Login</h1>
+            <h3 style={{ textAlign: 'left'}}>Welcome! Enter your email and password to continue</h3>
+            <br/>
+            <div className='card'>
+                <h4>Test data</h4>
+                <br/>
+                <p><b>EMAIL</b></p>
+                <p>mason@gmail.com</p>
+                <p><b>PASSWORD</b></p>
+                <p>mason1234</p>
+            </div>
+            <br/>
             <Form onSubmit={handleSubmit(submit)}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
